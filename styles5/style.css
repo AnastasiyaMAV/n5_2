@@ -1,0 +1,66 @@
+body {
+    /*Селектор по тегу*/
+    background: #EEEFF1;
+    /* Цвет фона */
+    color: #000000;
+    /* Цвет текста */
+}
+
+.menu {
+    /*Селектор по классу*/
+    text-decoration: none;
+    /*color: #34547A;*/
+    padding: 10px;
+    font-weight: 500;
+    margin: 50px;
+
+    top: 50px;
+}
+
+#main_menu .menu {
+    /*Составной селектор */
+    color: #000000;
+    text-decoration: underline;
+}
+
+#text {
+    /*Селектор по идентификатору, работа с текстом*/
+    margin: 25px;
+    font-family: 'Jost', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 8ch;
+}
+
+.logo {
+    /*Селектор по классу, работа с логотипом*/
+    width: 100px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+nav .menu:hover {
+    /*Псевдокласс подчеркивать ссылки меню */
+    text-decoration: underline;
+}
+
+a:link {
+    /*Псевдокласс */
+    color: #34547A;
+    /* Цвет ссылок */
+}
+
+a:visited {
+    /*Псевдокласс */
+    color: #0000d0;
+    /* Цвет посещенных ссылок*/
+}
+
+a:active {
+    /*Псевдокласс */
+    color: #f00;
+    /* Цвет активной ссылки */
+}
