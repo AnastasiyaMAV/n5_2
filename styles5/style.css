@@ -1,28 +1,46 @@
-body {
-    /*Селектор по тегу*/
+.header1 {
+    display: flex;
+    flex: 0 0 content;
+    justify-content: center;
+}
+
+.body1 {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
     background: #EEEFF1;
-    /* Цвет фона */
-    color: #000000;
-    /* Цвет текста */
+    /*размер подгонятеся по 100%*/
 }
 
-.menu {
-    /*Селектор по классу
-    text-decoration: none;
-    /*color: #34547A;
-    padding: 10px;
-    font-weight: 500;
-    margin: 50px;
-    top: 50px;*/
+.footer1 {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#main_menu .menu {
-    /*Составной селектор */
-    color: #000000;
-    text-decoration: underline;
+.nav1 {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
-#text {
+.section1 {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+}
+
+.div1 {
+    flex: 0 0 50vh;
+    height: 10vh;
+}
+
+#text1 {
     /*Селектор по идентификатору, работа с текстом*/
     margin: 25px;
     font-family: 'Jost', 'Arial Narrow', Arial, sans-serif;
@@ -31,35 +49,43 @@ body {
     font-size: 8ch;
 }
 
-.logo {
-    /*Селектор по классу, работа с логотипом*/
-    width: 100px;
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    opacity: 0.5;
-    border-radius: 5px;
+#text2 {
+    /*Селектор по идентификатору, работа с текстом*/
+    margin: 11px;
+    font-family: 'Jost', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 3ch;
 }
 
+/*Псевдокласс подчеркивать ссылки меню */
 nav .menu:hover {
-    /*Псевдокласс подчеркивать ссылки меню */
     text-decoration: underline;
 }
 
+/* Цвет ссылок */
 a:link {
-    /*Псевдокласс */
     color: #34547A;
-    /* Цвет ссылок */
 }
 
+/* Цвет посещенных ссылок*/
 a:visited {
-    /*Псевдокласс */
     color: #0000d0;
-    /* Цвет посещенных ссылок*/
 }
 
+/* Цвет активной ссылки */
 a:active {
-    /*Псевдокласс */
     color: #f00;
-    /* Цвет активной ссылки */
+}
+
+/*Подсветка кнопки при наведении*/
+.buttonChangeColor {
+    text-decoration: none;
+    background: #34547A;
+    color: #FFFFFF;
+}
+
+input.buttonChangeColor:hover {
+    color: #FF4500;
+    text-shadow: 0 0 1px #FF4500;
 }

@@ -12,53 +12,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100&display=swap" > 
     <link rel="stylesheet" href="/styles5/image.css">   
     <style>
-        .header1 {
-            display: flex;
-            flex: 0 0 content;
-            justify-content: center;
-        }
-        .body1 {
-            display: flex;
-            flex-flow: column;
-            min-height: 100vh; /*размер подгонятеся по 100%*/
-        }
-        .footer1 {
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav1{
-            display: flex;
-            flex: 1;
-            justify-content: space-around;
-        }        
+
     </style>
 </head>
 <body class="body1">
     <header class="header1">
-        <object class="logo" type="image/jpg" data="styles5/WD.jpg" >
-            <img class="logo" src="styles5/WD.jpg" alt="logo">
-        </object>
         <nav class="nav1">
             <a href="home_page.html">ГЛАВНАЯ</a>
             <a href="author.html">ОБ АВТОРЕ</a>
             <a href="work.html">РАБОТЫ</a>
             <a href="process">ПРОЦЕСС</a>
-            <a href="contacts.html">КОНТАКТЫ</a>
+            <a href="contacts.html">КОНТАКТЫ</a>          
         </nav>
+        <object type="image/jpg" data="styles5/WD.jpg" >
+            <img src="styles5/WD.jpg" alt="logo">
+        </object>  
     </header>
 
     <main>
-        <article>
-            <div id="text">Дизайн и верстка</div>
-            <h1>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.<br/> 
-                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</h1>
+        <section class="section1">
+            <div id="text1" class="section1">Дизайн и верстка</div>
+            <div id="text2" class="div1">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
             <figure>
                 <img src="styles5/Frame.png" alt="Frame">
-            </figure>
-        </article>
-        <input type="button" value="НАПИСАТЬ МНЕ"/><br/><br/><br/>
+            </figure>            
+        </section>       
+        <input class="buttonChangeColor" type="button" value="НАПИСАТЬ МНЕ"/>
     </main>
     <footer  class="footer1">
         <a href="home_page.html">ГЛАВНАЯ</a>
