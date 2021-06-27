@@ -7,14 +7,13 @@ body {
 }
 
 .menu {
-    /*Селектор по классу*/
+    /*Селектор по классу
     text-decoration: none;
-    /*color: #34547A;*/
+    /*color: #34547A;
     padding: 10px;
     font-weight: 500;
     margin: 50px;
-
-    top: 50px;
+    top: 50px;*/
 }
 
 #main_menu .menu {
